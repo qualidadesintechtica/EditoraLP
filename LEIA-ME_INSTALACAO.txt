@@ -1,0 +1,118 @@
+EDITORA SINTECHTICA — LANDING PAGE
+Pacote para publicação em outro ambiente
+Versão: 1.0 | Preparado em 17/11/2026
+
+1. O QUE ESTE PACOTE CONTÉM
+
+Esta é a mesma versão visual da landing page publicada para revisão.
+O site utiliza HTML, CSS e JavaScript, com fontes incluídas no próprio pacote.
+Não precisa de instalação de dependências, compilação, Node.js ou banco de dados
+para funcionar no servidor de destino.
+
+Arquivos principais:
+- index.html: página, textos e seções.
+- styles.css: cores, tipografia e adaptação para celular.
+- app.js: menu, detalhes das obras, privacidade e preparação de e-mail.
+- assets/: fontes, ícone e licença das fontes.
+- LEIA-ME_INSTALACAO.txt: este guia.
+
+As ilustrações de livros e capas são feitas no próprio CSS. Não há imagens ou
+fontes que precisem ser baixadas de outros serviços para montar a página.
+
+2. COMO PUBLICAR
+
+1) Baixe e descompacte o ZIP no seu computador.
+2) Abra a pasta do site, domínio ou subdomínio no ambiente de hospedagem.
+   Essa pasta pode ser chamada public_html, www, wwwroot ou outro nome definido
+   pela equipe de TI.
+3) Envie index.html, styles.css, app.js e a pasta assets para a pasta destinada
+   à landing page, preservando os nomes e a organização dos arquivos.
+4) O arquivo index.html deve ficar diretamente na pasta de publicação.
+5) Habilite HTTPS no ambiente de destino.
+6) Acesse o endereço configurado no navegador e confira a página.
+
+Se a hospedagem aceita upload e extração de ZIP, você pode enviar este ZIP
+e extraí-lo diretamente na pasta de publicação. Os arquivos do site estão
+na raiz do ZIP, sem uma pasta adicional envolvendo o conteúdo.
+
+O guia LEIA-ME_INSTALACAO.txt é apenas documentação; não precisa ser publicado.
+
+3. PUBLICAÇÃO EM SUBPASTA
+
+Também é possível publicar os arquivos dentro de uma subpasta, como /editora/.
+Os caminhos dos arquivos são relativos e acompanham essa organização.
+Mantenha index.html, styles.css, app.js e assets juntos nessa mesma pasta.
+
+4. AMBIENTE QUE PEDE COMANDO DE BUILD OU PASTA DE SAÍDA
+
+Tipo de site: estático.
+Comando de build: não necessário.
+Pasta a publicar: a pasta que contém index.html e assets.
+Documento inicial: index.html.
+Não é necessário configurar rotas de aplicação ou redirecionamento para SPA.
+
+5. TESTE NO COMPUTADOR
+
+Após extrair o ZIP, abra index.html no navegador para conferir o conteúdo.
+Para verificar o comportamento mais próximo da hospedagem, utilize um servidor
+estático local. Se você já tiver Python instalado, abra um terminal na pasta
+dos arquivos, execute:
+
+python -m http.server 8000
+
+Depois abra http://localhost:8000/ no navegador.
+Python é opcional para esse teste; não é uma dependência da hospedagem.
+
+6. COMO FUNCIONA O CONTATO
+
+E-mail configurado: editorasintechtica@animaeducacao.com.br
+
+O botão "Preparar meu e-mail" monta a mensagem e solicita a abertura do
+aplicativo de e-mail do visitante. A pessoa revisa e envia a mensagem.
+Se o aplicativo não abrir, a própria página mostra o endereço de contato.
+
+Este pacote não inclui envio automático pelo servidor, armazenamento de contatos,
+cadastro de usuários, upload de originais, checkout ou área administrativa.
+
+7. ACESSO AO SITE
+
+O pacote é independente da hospedagem atual e não exige login no ChatGPT.
+O controle de acesso da versão de revisão não acompanha os arquivos estáticos.
+Se o novo ambiente precisar de acesso restrito, configure a autenticação na
+infraestrutura de destino com a equipe responsável.
+
+8. COMO EDITAR
+
+Use um editor de texto ou código com suporte a UTF-8.
+
+- Textos principais, títulos e perguntas: index.html.
+- Textos das janelas dos projetos: objeto projectInfo em app.js.
+- Cores principais: variáveis no início de styles.css.
+- E-mail de contato: substituir todas as ocorrências em index.html e app.js.
+
+Paleta da versão atual:
+Roxo: #241b32 | Fundo claro: #f7f5ef
+Verde claro: #d8e49d | Rosa: #e26591
+
+Preserve os atributos id, class, data-project e data-interest ao editar os
+textos para manter as ligações com o JavaScript e a navegação.
+Ao publicar alterações, atualize os arquivos editados na hospedagem.
+
+9. CONTEÚDO EDITORIAL
+
+As capas dos projetos "Educação que floresce" e "Taxonomia da Neuroaprendizagem"
+são estudos visuais ilustrativos, identificados na página.
+Autoria, capas definitivas, títulos finais, datas e canais de acesso devem ser
+atualizados conforme confirmação da equipe editorial.
+
+10. CONFERÊNCIA APÓS O ENVIO
+
+- A página abre com as cores e fontes esperadas.
+- O menu leva às seções e funciona no celular.
+- Os botões das obras abrem os respectivos detalhes.
+- As perguntas frequentes expandem e recolhem.
+- O formulário bloqueia nome ou mensagem em branco.
+- O e-mail de contato está correto e o visitante consegue preparar a mensagem.
+
+As fontes incluídas têm os avisos e condições em assets/FONT-LICENSE.txt.
+Preserve esse arquivo junto com as fontes redistribuídas.
