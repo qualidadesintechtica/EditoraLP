@@ -1,6 +1,6 @@
 EDITORA SINTECHTICA — LANDING PAGE
 Pacote para publicação em outro ambiente
-Versão: 1.0 | Preparado em 17/11/2026
+Versão: 2.1 (EditoraLP com identidade Ânima e Sintechtica) | Atualizado em 25/11/2026
 
 1. O QUE ESTE PACOTE CONTÉM
 
@@ -90,9 +90,13 @@ Use um editor de texto ou código com suporte a UTF-8.
 - Cores principais: variáveis no início de styles.css.
 - E-mail de contato: substituir todas as ocorrências em index.html e app.js.
 
-Paleta da versão atual:
-Roxo: #241b32 | Fundo claro: #f7f5ef
-Verde claro: #d8e49d | Rosa: #e26591
+Identidade visual (versão 2 — Guia de Comunicação e Marca Ânima, 6ª ed.):
+Roxo #5B2D82 | Magenta #B51E84 | Rosa #E84683 | Laranja #F58220
+Verde-água #00B4AA | Fundo claro #FBF8FC
+Gradiente institucional: magenta → rosa → laranja.
+Títulos: Baloo 2 | Textos: Nunito Sans (arquivos .woff2 na pasta assets).
+Logo: assets/logo-sintechtica.svg (fundos claros) e
+assets/logo-sintechtica-branco.svg (fundos escuros).
 
 Preserve os atributos id, class, data-project e data-interest ao editar os
 textos para manter as ligações com o JavaScript e a navegação.
@@ -116,3 +120,23 @@ atualizados conforme confirmação da equipe editorial.
 
 As fontes incluídas têm os avisos e condições em assets/FONT-LICENSE.txt.
 Preserve esse arquivo junto com as fontes redistribuídas.
+
+11. IDENTIDADE VISUAL INCORPORADA À EDITORALP
+
+A EditoraLP recebeu os elementos visuais do pacote de referência
+Editora_Sintechtica_Landing_Page_Anima:
+- logotipo Sintechtica em fundo claro e escuro e ícone da página;
+- fontes Baloo 2 e Nunito Sans, incluídas no pacote;
+- paleta roxa, magenta, rosa, laranja e verde-água e o gradiente da referência;
+- tratamentos do cabeçalho, rodapé, livros ilustrativos, botões e formulário.
+
+Os textos institucionais, projetos, contato e funcionalidades da EditoraLP
+foram preservados. O arquivo app.js permanece idêntico ao da EditoraLP original.
+Foram ajustados um ícone de navegação e o tamanho do e-mail no celular.
+
+Na comparação, a diferença entre os dois arquivos app.js estava apenas na
+capitalização de duas categorias de projetos. Essa lógica não foi substituída.
+
+Para atualizar uma instalação existente, envie os arquivos deste pacote para
+a pasta da landing page, incluindo a pasta assets. Atualize a página no navegador
+após a substituição para carregar os novos estilos e as fontes.
