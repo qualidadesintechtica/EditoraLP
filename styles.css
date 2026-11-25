@@ -180,3 +180,65 @@ dialog .eyebrow{margin-bottom:18px}
 /* Ajustes de integração da identidade visual na EditoraLP. */
 .topic-strip i{color:#fff}
 @media(max-width:640px){.contact-email{font-size:clamp(11px,3.3vw,14px)}}
+
+/* Conteúdo e seções atualizados conforme Pontos para a LP — 25/11/2026. */
+.about-copy{padding-top:48px}
+.about-copy .lead{font-size:20px;line-height:1.6}
+.about-copy>p+p{max-width:none;margin-top:19px}
+.dna{padding-top:0;padding-bottom:100px}
+.dna-heading{margin-bottom:30px}
+.dna-heading h2{font-size:clamp(38px,4vw,54px)}
+.dna-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.dna-card{border-top:3px solid var(--magenta);padding-top:24px}
+.dna-card:nth-child(2){border-color:var(--verde-agua)}
+.dna-card:nth-child(3){border-color:var(--laranja)}
+.dna-index{color:var(--magenta);font-size:12px;font-weight:700;letter-spacing:.08em}
+.dna-card:nth-child(2) .dna-index{color:#00807a}
+.dna-card:nth-child(3) .dna-index{color:#aa4c00}
+.dna-card h3{font-size:23px;line-height:1.15;margin:12px 0 15px;max-width:310px}
+.dna-card p{font-size:15px;color:var(--muted);line-height:1.8}
+.project-meta h3{line-height:1.15}
+.project-subtitle{display:block;font:700 17px/1.5 var(--sans);margin-top:10px;color:var(--ink)}
+.project-intro{font-size:15px;line-height:1.75;color:var(--muted);margin:16px 0 20px;max-width:540px}
+.project-production{display:table;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;background:#e1f4f3;color:#006b66;margin:16px 0 20px}
+.flower-book strong{font-size:28px}
+.flower-book strong i{font-size:26px;letter-spacing:-.04em}
+.manifesto h2{max-width:1040px;margin:auto;font-size:clamp(34px,4.2vw,60px);line-height:1.12}
+.authors-simple{padding:95px 0}
+.authors-callout{text-align:center;display:flex;flex-direction:column;align-items:center;gap:32px}
+.authors-callout h2{max-width:970px;font-size:clamp(34px,4.2vw,59px);line-height:1.1}
+.authors-email{display:inline-flex;align-items:center;justify-content:center;gap:16px;max-width:100%;font-size:17px;font-weight:700;color:var(--magenta);border-bottom:1px solid #c99fbe;padding:10px 0}
+.authors-email span{overflow-wrap:anywhere;min-width:0}
+.authors-email svg{width:20px;height:20px;flex-shrink:0}
+.authors-email:hover{color:var(--roxo)}
+#dialog-description p{font-size:15px;color:var(--muted);line-height:1.7;margin:16px 0 0}
+#project-dialog h2{font-size:clamp(27px,3.2vw,38px);line-height:1.15}
+@media(max-width:800px){
+ .about-grid{gap:38px}
+ .about-copy .lead{font-size:18px}
+ .dna-grid{gap:20px}
+ .dna-card h3{font-size:21px}
+ .dna-card p{font-size:14px}
+ .project-subtitle{font-size:15px}
+ .authors-email{font-size:15px}
+}
+@media(max-width:640px){
+ .about-copy{padding-top:0}
+ .about-copy .lead{font-size:18px}
+ .dna{padding:0 0 65px}
+ .dna-grid{grid-template-columns:1fr;gap:29px}
+ .dna-card{padding-top:19px}
+ .dna-card h3{font-size:24px;max-width:none;margin:10px 0 12px}
+ .dna-card p{font-size:15px}
+ .dna-heading{margin-bottom:27px}
+ .manifesto h2{font-size:35px;line-height:1.15}
+ .authors-simple{padding:65px 0}
+ .authors-callout{gap:23px}
+ .authors-callout h2{font-size:37px;line-height:1.13}
+ .authors-email{font-size:clamp(11px,3.2vw,14px);gap:9px}
+ .authors-email svg{width:17px;height:17px}
+ .project-intro{font-size:14px}
+}
+
+#project-dialog #dialog-subtitle{font:700 18px/1.5 var(--sans);color:var(--roxo);margin:-10px 0 21px}
+#project-dialog #dialog-subtitle[hidden]{display:none}

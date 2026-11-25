@@ -22,24 +22,37 @@ document.getElementById('year').textContent = String(new Date().getFullYear());
 const projectDialog = document.getElementById('project-dialog');
 const privacyDialog = document.getElementById('privacy-dialog');
 const projectInfo = {
-  floresce: {
-    title: 'Educação que floresce',
-    category: 'PROJETO EDITORIAL · EDUCAÇÃO',
-    description: 'Educação que floresce integra o planejamento editorial da Sintechtica. Para conhecer a proposta da obra, sua autoria e as informações de lançamento, converse com a equipe editorial.'
+  "floresce": {
+    "title": "Educação que FLORESCE",
+    "subtitle": "Ciência da Felicidade, Aprendizagem e Transformação no Ensino Superior",
+    "category": "Obra de estreia · Educação",
+    "description": [
+      "A Editora SINTECHTICA inicia suas atividades com a publicação do livro Educação que FLORESCE: Ciência da Felicidade, Aprendizagem e Transformação no Ensino Superior.",
+      "Este livro registra e analisa o início da construção da Ciência da Felicidade no Ecossistema Ânima, articulando fundamentos científicos, escolhas institucionais e experiências educacionais. Ao longo de dez capítulos, diferentes autores e autoras examinam como bem-estar, aprendizagem, pertencimento, inclusão, desenvolvimento humano e permanência estudantil podem dialogar com uma concepção de educação superior comprometida com o florescimento."
+    ]
   },
-  taxonomia: {
-    title: 'Taxonomia da Neuroaprendizagem',
-    category: 'PROJETO EDITORIAL · APRENDIZAGEM',
-    description: 'O projeto sobre Taxonomia da Neuroaprendizagem integra o percurso editorial da Sintechtica. Consulte a equipe para confirmar o título definitivo, a autoria, a proposta e as condições de acesso à obra.'
+  "taxonomia": {
+    "title": "Taxonomia da Neuroaprendizagem",
+    "category": "Em produção · Aprendizagem",
+    "description": [
+      "Em produção."
+    ]
   }
 };
 function openDialog(dialog) { dialog.showModal(); document.body.classList.add('no-scroll'); }
 document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => {
   const project = projectInfo[button.dataset.project];
   document.getElementById('dialog-title').textContent = project.title;
+  const subtitle = document.getElementById('dialog-subtitle');
+  subtitle.textContent = project.subtitle || '';
+  subtitle.hidden = !project.subtitle;
   document.getElementById('dialog-category').textContent = project.category;
-  document.getElementById('dialog-description').textContent = project.description;
-  document.getElementById('dialog-contact').dataset.projectTitle = project.title;
+  document.getElementById('dialog-description').replaceChildren(...project.description.map(text => {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = text;
+    return paragraph;
+  }));
+  document.getElementById('dialog-contact').dataset.projectTitle = project.subtitle ? `${project.title}: ${project.subtitle}` : project.title;
   openDialog(projectDialog);
 }));
 document.querySelectorAll('dialog').forEach(dialog => {

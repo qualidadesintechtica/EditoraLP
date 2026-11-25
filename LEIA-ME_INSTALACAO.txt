@@ -1,6 +1,6 @@
 EDITORA SINTECHTICA — LANDING PAGE
 Pacote para publicação em outro ambiente
-Versão: 2.1 (EditoraLP com identidade Ânima e Sintechtica) | Atualizado em 25/11/2026
+Versão: 2.2 (revisão de conteúdo e Nosso DNA) | Atualizado em 25/11/2026
 
 1. O QUE ESTE PACOTE CONTÉM
 
@@ -130,8 +130,8 @@ Editora_Sintechtica_Landing_Page_Anima:
 - paleta roxa, magenta, rosa, laranja e verde-água e o gradiente da referência;
 - tratamentos do cabeçalho, rodapé, livros ilustrativos, botões e formulário.
 
-Os textos institucionais, projetos, contato e funcionalidades da EditoraLP
-foram preservados. O arquivo app.js permanece idêntico ao da EditoraLP original.
+A estrutura, o contato e as funcionalidades da EditoraLP foram preservados;
+os textos institucionais e dos projetos foram atualizados na revisão 2.2. O arquivo app.js mantém os recursos de navegação e contato e recebe os textos atualizados dos projetos.
 Foram ajustados um ícone de navegação e o tamanho do e-mail no celular.
 
 Na comparação, a diferença entre os dois arquivos app.js estava apenas na
@@ -140,3 +140,19 @@ capitalização de duas categorias de projetos. Essa lógica não foi substituí
 Para atualizar uma instalação existente, envie os arquivos deste pacote para
 a pasta da landing page, incluindo a pasta assets. Atualize a página no navegador
 após a substituição para carregar os novos estilos e as fontes.
+
+12. REVISÃO CONFORME PONTOS PARA A LP
+
+- Texto de apresentação institucional atualizado integralmente.
+- Seção Nosso DNA com rigor acadêmico-editorial, inovação e tecnologia e atuação humana.
+- Nova frase abaixo do título principal e novo título da seção A editora.
+- Frase da seção de perspectiva substituída.
+- Educação que FLORESCE apresentado como obra de estreia, com título completo,
+  apresentação e sinopse fornecidos no documento.
+- Taxonomia da Neuroaprendizagem identificado como Em produção.
+- Seção para autores reduzida à frase solicitada e ao e-mail da editora.
+- Identidade visual, fontes, logos, perguntas frequentes e contato preservados.
+
+As capas continuam sendo ilustrações. Nenhuma capa definitiva foi fornecida
+nesta revisão. O texto completo de Educação que FLORESCE está disponível ao
+clicar em Conhecer a obra.
